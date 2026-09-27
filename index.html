@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go and Tell (BASS) - Download Page</title>
+    <!-- Google Fonts para sa magandang typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-title p {
+            font-size: 14px;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .header-title h1 {
+            font-size: 32px;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        /* Container para magkatabi sa PC, patong sa CP */
+        .cards-container {
+            display: flex;
+            gap: 25px;
+            max-width: 850px;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            flex: 1;
+            min-width: 280px;
+            max-width: 380px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-container {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Kulay para sa MP3 (Blue) */
+        .mp3-card .icon-container { color: #4a90e2; }
+        .mp3-card .download-btn {
+            background: #4a90e2;
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+        }
+        .mp3-card .download-btn:hover {
+            background: #357abd;
+            box-shadow: 0 8px 20px rgba(74, 144, 226, 0.6);
+        }
+
+        /* Kulay para sa MP4 (Green/Teal) */
+        .mp4-card .icon-container { color: #2ec4b6; }
+        .mp4-card .download-btn {
+            background: #2ec4b6;
+            box-shadow: 0 5px 15px rgba(46, 196, 182, 0.4);
+        }
+        .mp4-card .download-btn:hover {
+            background: #20a396;
+            box-shadow: 0 8px 20px rgba(46, 196, 182, 0.6);
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #333333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .download-btn:active {
+            transform: translateY(2px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #778899;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-title">
+        <p>Christian Song (Bass Vocal)</p>
+        <h1>Go and Tell</h1>
+    </div>
+
+    <div class="cards-container">
+        
+        <!-- CARD O PILIAN PARA SA MP3 -->
+        <div class="card mp3-card">
+            <div>
+                <div class="icon-container">🎵</div>
+                <h2>MP3 Audio</h2>
+                <p class="description">I-download ang audio na bersyon para sa pakikinig o pagpa-practice ng kanta kahit walang internet.</p>
+            </div>
+            <!-- Nakaturo sa iyong MP3 file -->
+            <a href="Go_and_Tell_BASS.mp3" class="download-btn" download="Go_and_Tell_BASS.mp3">
+                📥 I-download ang MP3
+            </a>
+        </div>
+
+        <!-- CARD O PILIAN PARA SA MP4 -->
+        <div class="card mp4-card">
+            <div>
+                <div class="icon-container">🎥</div>
+                <h2>MP4 Video</h2>
+                <p class="description">I-download ang buong video na bersyon na may kasamang lyrics o visual guide.</p>
+            </div>
+            <!-- PALITAN ANG PANGALAN NG VIDEO FILE MO SA BABA -->
+            <a href="Go_And_Tell_BASS.mp4" class="download-btn" download="Go_And_Tell_BASS.mp4">
+                📥 I-download ang MP4
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Inihanda para sa mga kapatid kay Kristo.
+    </div>
+
+</body>
+</html>
